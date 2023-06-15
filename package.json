@@ -1,0 +1,13 @@
+{
+  "name": "bakend-collection",
+  "version": "1.0.0",
+  "scripts": {
+    "oauth2": "cd oauth2 && npm start",
+    "clients": "cd clients && npm start",
+    "users": "cd users && npm start",
+    "fake": "docker run -ti -p 3100:3100 -p 3110:3110 -v ./fake/:/input mocksserver/main"
+  },
+  "author": "dfonseca",
+  "license": "ISC",
+  "type": "module"
+}
