@@ -7,7 +7,7 @@
     "users": "cd users && npm start",
     "fake": "docker run -ti -p 3100:3100 -p 3110:3110 -v ./fake/:/input mocksserver/main"
   },
-  "author": "dfonseca",
+  "author": "dfonsecam",
   "license": "ISC",
   "type": "module"
 }

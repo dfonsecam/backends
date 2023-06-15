@@ -7,7 +7,7 @@
         "start:debug": "node --inspect=7002 . --port 8082",
         "lint": "jshint --exclude node_modules ."
     },
-    "author": "dfonseca",
+    "author": "dfonsecam",
     "license": "ISC",
     "type": "module",
     "dependencies": {
