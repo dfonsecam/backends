@@ -7,7 +7,8 @@ const port = args.port || 3000;
 
 const app = express();
 app.use(bodyParser.json());
-app.route("/api/members").get((_req, res) => {
+app.route("/api/members").get((req, res) => {
+  console.log("Proxy request %s method %s", req.url, req.method);
   // generate a list of users
   const generateUser = () => {
     const randomId = Math.floor(Math.random() * 1000);
