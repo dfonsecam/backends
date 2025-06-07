@@ -1,0 +1,24 @@
+services:
+  auth:
+    build: ./auth
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./auth:/app
+    command: npm start
+
+  clients:
+    build: ./clients
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./clients:/app
+    command: npm start
+
+  members:
+    build: ./members
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./members:/app
+    command: npm start

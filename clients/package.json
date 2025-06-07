@@ -1,10 +1,10 @@
 {
-    "name": "backend2",
+    "name": "clients",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "start": "node . --port 8082",
-        "start:debug": "node --inspect=7002 . --port 8082",
+        "start": "node . --port 8080",
+        "start:debug": "node --inspect=7002 . --port 8080",
         "lint": "jshint --exclude node_modules ."
     },
     "author": "dfonsecam",

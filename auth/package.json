@@ -1,10 +1,10 @@
 {
-    "name": "backend2",
+    "name": "auth",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "start": "node . --port 8080",
-        "start:debug": "node --inspect=7000 . --port 8080",
+        "start": "node --env-file .env . --port 8080",
+        "start:debug": "node --env-file .env --inspect=7000 . --port 8080",
         "lint": "jshint --exclude node_modules ."
     },
     "author": "dfonsecam",

@@ -16,5 +16,5 @@ passport.use(strategy);
 app.post("/oauth/token", middelware, generateBearerToken);
 
 app.listen(port, () => {
-    console.log(`listening on port ${port}`);
+  console.log(`listening on port ${port}`);
 });
