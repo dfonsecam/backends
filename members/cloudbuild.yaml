@@ -14,17 +14,15 @@ steps:
       - "service-members"
       - "--image"
       - "gcr.io/${PROJECT_ID}/service-members:latest"
+      - "--allow-unauthenticated"
       - "--region"
       - "us-central1"
       - "--platform"
       - "managed"
-      - "--allow-unauthenticated"
       - "--ingress"
       - "internal"
       - "--memory"
       - "512Mi"
-      - "--set-env-vars"
-      - "GOOGLE_CLOUD_PROJECT=${PROJECT_ID}"
 
 timeout: 1200s
 images: ["gcr.io/${PROJECT_ID}/service-members:latest"]
