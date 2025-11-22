@@ -2,7 +2,7 @@ import bodyParser from "body-parser";
 import express from "express";
 import minimist from "minimist";
 import passport from "passport";
-import { middelware, strategy } from "./auth.js";
+import { middleware, strategy } from "./auth.js";
 import { generateBearerToken } from "./bearer.js";
 
 const args = minimist(process.argv.slice(2));
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 passport.use(strategy);
 
-app.post("/oauth/token", middelware, generateBearerToken);
+app.post("/oauth/token", middleware, generateBearerToken);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

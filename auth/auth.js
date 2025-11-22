@@ -18,7 +18,7 @@ export const strategy = new Strategy(function (clientId, clientSecret, done) {
   return done(null, result);
 });
 
-export function middelware(req, res, next) {
+export function middleware(req, res, next) {
   console.log("Proxy request %s method %s", req.url, req.method);
 
   passport.authenticate("oauth2-client-password", {
